@@ -1,0 +1,11 @@
+[font]
+size = 16.0
+
+[font.normal]
+family="0xProto Nerd Font Mono"
+
+[window]
+decorations="none"
+
+[colors.primary]
+background="#0d1117"
