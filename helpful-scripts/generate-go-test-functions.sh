@@ -5,4 +5,4 @@ if [[ $# < 2 ]]; then
 	exit 1
 fi
 
-for FILE in $(grep -oP 'func\s+\K[A-Z]\w+' $1); do echo "func Test$FILE(t *testing.T){}" >>$2; done
+for FILE in $(grep -oP 'func\s+(\([^)]*\)\s*)?\K[A-Z]\w+' $1); do echo "func Test$FILE(t *testing.T){}" >>$2; done
