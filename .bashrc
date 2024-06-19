@@ -5,3 +5,5 @@ alias notes="cd ~/github/notes/"
 alias av="ansible-vault"
 
 export PS1='\[\e[38;5;203m\]\w\[\e[m\] \$ '
+
+set -o vi
