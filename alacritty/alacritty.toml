@@ -9,3 +9,6 @@ decorations="none"
 
 [colors.primary]
 background="#0d1117"
+
+[shell]
+program="/bin/bash"

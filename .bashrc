@@ -1,5 +1,7 @@
-if [ -f "$HOME/bash_profile.sh" ]; then
-	. "$HOME/bash_profile"
+if [ -f "$HOME/.bash_profile" ]; then
+	. "$HOME/.bash_profile"
+else
+	echo "Unable to find bash_profile..."
 fi
 
 alias vim="nvim"
