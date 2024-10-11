@@ -1,3 +1,7 @@
+if [ -f "$HOME/bash_profile.sh" ]; then
+	. "$HOME/bash_profile"
+fi
+
 alias vim="nvim"
 alias v="nvim"
 alias nc="cd ~/.config/nvim/"
