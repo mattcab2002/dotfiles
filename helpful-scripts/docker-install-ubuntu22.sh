@@ -25,3 +25,7 @@ sudo apt install -y docker-ce
 
 echo "Verifying Docker service status..."
 sudo systemctl status docker
+
+echo "Adding user to Docker group..."
+sudo usermod -aG docker $USER
+newgrp docker
