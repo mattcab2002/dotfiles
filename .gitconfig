@@ -1,0 +1,9 @@
+[user]
+	email = matthewanthonycabral@gmail.com
+	name = Matthew Cabral
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
