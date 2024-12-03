@@ -27,5 +27,5 @@ echo "Verifying Docker service status..."
 sudo systemctl status docker
 
 echo "Adding user to Docker group..."
+sudo newgrp docker
 sudo usermod -aG docker $USER
-newgrp docker

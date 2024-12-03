@@ -1,0 +1,25 @@
+networks:
+    vps_net:
+
+services:
+    proxy:
+        image: ghcr.io/mattcab2002/vps-proxy
+        networks:
+            - vps_net
+        ports:
+            - 80:80
+
+    db:
+        image: postgres
+        networks:
+            - vps_net
+        volumes:
+            - type: tmpfs
+              target: /dev/shm
+        environment:
+            POSTGRES_PASSWORD: admin
+
+    adminer:
+        image: adminer
+        networks:
+            - vps_net
