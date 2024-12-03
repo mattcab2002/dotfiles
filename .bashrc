@@ -7,7 +7,6 @@ fi
 # aliases
 alias vim="nvim"
 alias v="nvim"
-alias nc="cd ~/.config/nvim/"
 alias notes="cd ~/github/notes/"
 alias av="ansible-vault"
 alias mkpasswd="openssl rand -base64 12"
